@@ -20,6 +20,8 @@ import BorderColorIcon from "@mui/icons-material/BorderColor";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import AddIcon from "@mui/icons-material/Add";
 import { red } from "@mui/material/colors";
 import history from "./history";
 
@@ -48,7 +50,12 @@ const Menu = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" onClick={() => history.push("/asistencia")}>
+              <Button
+                color="warning"
+                size="small"
+                onClick={() => history.push("/asistencia")}
+                endIcon={<KeyboardDoubleArrowRightIcon />}
+              >
                 Ir a...
               </Button>
             </CardActions>
@@ -73,7 +80,22 @@ const Menu = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Ir a...</Button>
+              <Button
+                size="small"
+                variant="outlined"
+                color="warning"
+                endIcon={<AddIcon />}
+                onClick={() => history.push("/jornada/nueva")}
+              >
+                Nueva
+              </Button>
+              <Button
+                size="small"
+                color="warning"
+                endIcon={<KeyboardDoubleArrowRightIcon />}
+              >
+                Administrar
+              </Button>
             </CardActions>
           </Card>
         </Grid>
@@ -89,14 +111,20 @@ const Menu = () => {
                 Votaciones DuocUC
               </Typography>
               <Typography variant="h5" component="div">
-                Resultados Assitencia.
+                Resultados Asistencia.
               </Typography>
               <Typography sx={{ mb: 1.5 }} color="text.secondary">
                 Visualiza los resultados de la jornada.
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Ir a...</Button>
+              <Button
+                color="warning"
+                size="small"
+                endIcon={<KeyboardDoubleArrowRightIcon />}
+              >
+                Ir a...
+              </Button>
             </CardActions>
           </Card>
         </Grid>
@@ -122,7 +150,13 @@ const Menu = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Ir a...</Button>
+              <Button
+                color="warning"
+                size="small"
+                endIcon={<KeyboardDoubleArrowRightIcon />}
+              >
+                Ir a...
+              </Button>
             </CardActions>
           </Card>
         </Grid>
@@ -145,7 +179,13 @@ const Menu = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Ir a...</Button>
+              <Button
+                color="warning"
+                size="small"
+                endIcon={<KeyboardDoubleArrowRightIcon />}
+              >
+                Ir a...
+              </Button>
             </CardActions>
           </Card>
         </Grid>

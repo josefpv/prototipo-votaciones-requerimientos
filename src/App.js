@@ -8,6 +8,7 @@ import { Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import Login from "./components/Login";
 import Menu from "./components/Menu";
 import Asistencia from "./components/Asistencia";
+import NuevaJornada from "./components/NuevaJornada";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path="/asistencia">
             <Asistencia />
+          </Route>
+          <Route path="/jornada/nueva" exact>
+            <NuevaJornada />
           </Route>
         </Switch>
       </Router>

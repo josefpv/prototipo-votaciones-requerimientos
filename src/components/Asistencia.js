@@ -7,8 +7,13 @@ import {
   TextField,
   Paper,
   Divider,
+  Alert,
+  FormGroup,
+  FormControlLabel,
+  Checkbox,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import HowToVoteIcon from "@mui/icons-material/HowToVote";
 
 import Navbar from "./Navbar";
 
@@ -27,6 +32,12 @@ const Asistencia = () => {
               alignItems="center"
             >
               <Grid item md={12}>
+                <Alert severity="info">
+                  Escanee el código QR o ingrese manualmente el serial para
+                  comenzar...
+                </Alert>
+              </Grid>
+              <Grid item md={12}>
                 <TextField
                   id="outlined-basic"
                   label="Serial"
@@ -36,13 +47,22 @@ const Asistencia = () => {
                 />
               </Grid>
               <Grid item md={12}>
+                <Alert severity="error">Serial ingresado no válido</Alert>
+              </Grid>
+              <Grid item md={12}>
                 <TextField
                   id="outlined-basic"
-                  label="Serial"
+                  label="RUN"
                   variant="outlined"
                   fullWidth
                   helperText="Ingrese su RUN sin puntos, con guión y dígito verificador."
                 />
+              </Grid>
+              <Grid item md={12}>
+                <Alert severity="warning">
+                  Usted no se encuentra habilitado para sufragar, por favor
+                  diríjase al Centro Estudiantil para mayor información.
+                </Alert>
               </Grid>
               <Grid item md={12}>
                 <Button
@@ -66,6 +86,77 @@ const Asistencia = () => {
             </Grid>
             <Grid item md={12}>
               <Divider />
+            </Grid>
+            <Grid item md={4}>
+              <TextField
+                id="outlined-basic"
+                label="Nombres"
+                variant="outlined"
+                fullWidth
+                inputProps={{ readOnly: true }}
+              />
+            </Grid>
+            <Grid item md={4}>
+              <TextField
+                id="outlined-basic"
+                label="Apellidos"
+                variant="outlined"
+                fullWidth
+                inputProps={{ readOnly: true }}
+              />
+            </Grid>
+            <Grid item md={4}>
+              <TextField
+                id="outlined-basic"
+                label="Carreras"
+                variant="outlined"
+                fullWidth
+                inputProps={{ readOnly: true }}
+              />
+            </Grid>
+            <Grid item md={4}>
+              <TextField
+                id="outlined-basic"
+                label="Sede"
+                variant="outlined"
+                fullWidth
+                inputProps={{ readOnly: true }}
+              />
+            </Grid>
+            <Grid item md={4}>
+              <TextField
+                id="outlined-basic"
+                label="Jornada"
+                variant="outlined"
+                fullWidth
+                inputProps={{ readOnly: true }}
+              />
+            </Grid>
+            <Grid item md={4}>
+              <TextField
+                id="outlined-basic"
+                label="Mesa de votación"
+                variant="outlined"
+                fullWidth
+                inputProps={{ readOnly: true }}
+              />
+            </Grid>
+            <Grid item md={12}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox defaultChecked />}
+                  label="Confirmo que mis datos son correctos y autorizo a DuocUC a utilizar mis datos para fines de asistencia electoral."
+                />
+              </FormGroup>
+            </Grid>
+            <Grid item md={4}>
+              <Button
+                variant="outlined"
+                color="warning"
+                startIcon={<HowToVoteIcon />}
+              >
+                Registrar Asistencia
+              </Button>
             </Grid>
           </Grid>
         </Grid>
