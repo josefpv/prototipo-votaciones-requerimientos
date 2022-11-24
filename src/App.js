@@ -9,6 +9,8 @@ import Login from "./components/Login";
 import Menu from "./components/Menu";
 import Asistencia from "./components/Asistencia";
 import NuevaJornada from "./components/NuevaJornada";
+import Jornadas from "./components/Jornadas";
+import Resultados from "./components/Resultados";
 
 function App() {
   return (
@@ -40,6 +42,12 @@ function App() {
           </Route>
           <Route path="/jornada/nueva" exact>
             <NuevaJornada />
+          </Route>
+          <Route path="/jornadas">
+            <Jornadas />
+          </Route>
+          <Route path="/resultados">
+            <Resultados />
           </Route>
         </Switch>
       </Router>

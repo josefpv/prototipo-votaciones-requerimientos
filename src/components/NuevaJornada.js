@@ -10,10 +10,13 @@ import {
   InputLabel,
   TextField,
 } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+import HomeIcon from "@mui/icons-material/Home";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 import { fetchSedes } from "../data/sedes";
 import { fetchEscuelas } from "../data/escuelas";
+import history from "./history";
 
 const NuevaJornada = () => {
   const [sede, setSede] = useState(1);
@@ -150,6 +153,27 @@ const NuevaJornada = () => {
               setHasta(newValue);
             }}
           />
+        </Grid>
+        <Grid item md={4}>
+          <Button
+            variant="outlined"
+            color="warning"
+            fullWidth
+            sx={{ height: "100%" }}
+            startIcon={<AddIcon />}
+          >
+            Crear Jornada
+          </Button>
+        </Grid>
+        <Grid item md={4}>
+          <Button
+            fullWidth
+            sx={{ height: "100%" }}
+            startIcon={<HomeIcon />}
+            onClick={() => history.push("/inicio")}
+          >
+            Ir a inicio
+          </Button>
         </Grid>
       </Grid>
     </React.Fragment>

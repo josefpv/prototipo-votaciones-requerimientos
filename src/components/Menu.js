@@ -93,6 +93,7 @@ const Menu = () => {
                 size="small"
                 color="warning"
                 endIcon={<KeyboardDoubleArrowRightIcon />}
+                onClick={() => history.push("/jornadas")}
               >
                 Administrar
               </Button>
@@ -122,6 +123,7 @@ const Menu = () => {
                 color="warning"
                 size="small"
                 endIcon={<KeyboardDoubleArrowRightIcon />}
+                onClick={() => history.push("/resultados")}
               >
                 Ir a...
               </Button>
