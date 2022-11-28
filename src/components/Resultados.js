@@ -99,14 +99,14 @@ const Resultados = () => {
         </Grid>
         <Grid item md={12} sx={{ marginTop: 2, marginBottom: 2 }}>
           <Grid container justifyContent="center" alignContent="center">
-            <Grid item md={1} sx={{ pl: 4 }}>
+            <Grid item md={2} sx={{ pl: 4 }}>
               <Avatar
                 alt="Andrea C. Villanueva M."
                 src={Ganadora}
                 sx={{ width: 100, height: 100 }}
               />
             </Grid>
-            <Grid item md={11}>
+            <Grid item md={10}>
               <Typography variant="h5" component="div">
                 Andrea C. Villanueva M.
               </Typography>

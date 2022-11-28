@@ -22,6 +22,7 @@ const Login = () => {
         <Grid container sx={{ marginTop: 30 }}>
           <Grid item md={12}>
             <img src={Logo} height={100} width={400} />
+            <Typography>Sistema de Asistencia a Votaciones</Typography>
           </Grid>
           <Grid item md={12} sx={{ marginTop: 4 }}>
             <TextField

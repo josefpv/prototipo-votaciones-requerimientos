@@ -30,7 +30,7 @@ const Menu = () => {
     <React.Fragment>
       <Navbar />
       <Grid container sx={{ p: 2 }} spacing={2}>
-        <Grid item md={2}>
+        <Grid item md={3}>
           <Card sx={{ minWidth: 275, textAlign: "center" }}>
             <CardContent>
               <HowToVoteIcon sx={{ fontSize: 80, color: "#ffb700" }} />
@@ -61,7 +61,7 @@ const Menu = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item md={2}>
+        <Grid item md={3}>
           <Card sx={{ minWidth: 275, textAlign: "center" }}>
             <CardContent>
               <AssignmentIcon sx={{ fontSize: 80, color: "#ffb700" }} />
@@ -100,7 +100,7 @@ const Menu = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item md={2}>
+        <Grid item md={3}>
           <Card sx={{ minWidth: 275, textAlign: "center" }}>
             <CardContent>
               <TimelineIcon sx={{ fontSize: 80, color: "#ffb700" }} />
@@ -133,7 +133,7 @@ const Menu = () => {
         <Grid item md={12}>
           <Divider />
         </Grid>
-        <Grid item md={2}>
+        {/* <Grid item md={2}>
           <Card sx={{ minWidth: 275, textAlign: "center" }}>
             <CardContent>
               <BorderColorIcon sx={{ fontSize: 80, color: "#ffb700" }} />
@@ -190,7 +190,7 @@ const Menu = () => {
               </Button>
             </CardActions>
           </Card>
-        </Grid>
+        </Grid> */}
       </Grid>
     </React.Fragment>
   );

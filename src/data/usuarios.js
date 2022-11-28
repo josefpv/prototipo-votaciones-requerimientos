@@ -4,8 +4,8 @@ import history from "../components/history";
 
 const usuarios = [
   {
-    nombre: "Jose Francisco",
-    usuario: "josefvivas",
+    nombre: "Administrador",
+    usuario: "admin",
     password: "12345",
     isAdmin: false,
   },

@@ -17,21 +17,21 @@ const Jornadas = () => {
             Jornadas Creadas
           </Typography>
         </Grid>
-        <Grid item md={2}>
+        <Grid item md={3}>
           <TarjetaJornada
             titulo="SJ20221201"
             descripcion="San Joaquín- Jornada electoral desde el 01-12-2022 11:00 hasta el 01-12-2022 16:00"
             imagen={SanJoaquin}
           />
         </Grid>
-        <Grid item md={2}>
+        <Grid item md={3}>
           <TarjetaJornada
             titulo="PA20221201"
             descripcion="Puente Alto - Jornada electoral desde el 01-12-2022 11:00 hasta el 01-12-2022 16:00"
             imagen={PuenteAlto}
           />
         </Grid>
-        <Grid item md={2}>
+        <Grid item md={3}>
           <TarjetaJornada
             titulo="SCA20221201"
             descripcion="San Carlos de Apoquindo - Jornada electoral desde el 01-12-2022 11:00 hasta el 01-12-2022 16:00"
