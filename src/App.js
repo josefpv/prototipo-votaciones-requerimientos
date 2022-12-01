@@ -11,6 +11,7 @@ import Asistencia from "./components/Asistencia";
 import NuevaJornada from "./components/NuevaJornada";
 import Jornadas from "./components/Jornadas";
 import Resultados from "./components/Resultados";
+import Nosotros from "./components/Nosotros";
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
           </Route>
           <Route path="/resultados">
             <Resultados />
+          </Route>
+          <Route path="/nosotros">
+            <Nosotros />
           </Route>
         </Switch>
       </Router>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Grid, TextField, Typography } from "@mui/material";
 import Logo from "./../images/logo.png";
 import { iniciaSesion } from "../data/usuarios";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [usuario, setUsuario] = useState("");
@@ -51,6 +52,13 @@ const Login = () => {
             >
               Ingresar
             </Button>
+          </Grid>
+          <Grid item md={12} sx={{ marginTop: 2 }}>
+            <Link to="/nosotros">
+              <Typography>
+                Más acerca de nosotros y nuestro proyecto...
+              </Typography>
+            </Link>
           </Grid>
         </Grid>
       </Grid>
